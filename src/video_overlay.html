@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Backdrop Twitch Extension</title>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Backdrop Twitch Extension</title>
 
-    <!-- 
+        <!-- 
     * https://dev.twitch.tv/docs/extensions/guidelines-and-policies/#2-technical
     * 2.9  The Twitch Extension Helper must be included as the first script in all front-end HTML files.
     */
     -->
-    <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+        <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
 
-    <style>
-      body {
-        height: 100vh;
-        width: 100vw;
-        margin: 0;
-        cursor: none;
-        background: transparent;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url("./assets/peppers.png");
-        overflow: hidden;
-      }
+        <style>
+            body {
+                height: 100vh;
+                width: 100vw;
+                margin: 0;
+                cursor: none;
+                background: transparent;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url('./assets/peppers.png');
+                overflow: hidden;
+            }
 
-      * {
-        -webkit-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
+            p {
+                margin: 0;
+                padding: 0;
+            }
 
-      .overlay-filter {
-        filter: grayscale(0.4) blur(5px);
-        width: 100%;
-        height: 100%;
-      }
-    </style>
-  </head>
+            * {
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
 
-  <body>
-    <div class="overlay-filter"></div>
-    <script src="main.js"></script>
-  </body>
+            #overlayFilter {
+                width: 100%;
+                height: 100%;
+            }
+
+            #menu {
+                top: 0;
+                position: absolute;
+            }
+
+            .filter-label {
+                display: flex;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="overlayFilter"></div>
+        <div id="menu"></div>
+        <script src="main.js"></script>
+    </body>
 </html>
