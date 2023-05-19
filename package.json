@@ -1,0 +1,22 @@
+{
+  "name": "backdrop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "node ./scripts/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p4dd9/backdrop.git"
+  },
+  "author": "Patrick Obermueller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/p4dd9/backdrop/issues"
+  },
+  "homepage": "https://github.com/p4dd9/backdrop#readme",
+  "dependencies": {
+    "archiver": "^5.3.1"
+  }
+}

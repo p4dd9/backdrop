@@ -1,2 +1,2 @@
-# backdrop
+# BACKDROP
 A clientside twitch extension
