@@ -41,8 +41,8 @@ const createBackdropFilterDOM = (type, unit) => {
     return `
         <div id="${type}-filter" class="filter">
             <label class="filter-label">
-                <p>${type} (in ${unit})</p>
-                <input id="${type}" type="text"></input>
+                <p>${type} (${unit})</p>
+                <input id="${type}" class="filter-input" type="number"></input>
             </label>
         <div>`;
 };
@@ -67,7 +67,7 @@ const injectFilter = (filter, unit) => {
 
     menuDOM.appendChild(filterDOM);
     const filterInputDOM = document.getElementById(filter);
-    filterInputDOM.addEventListener('change', (e) => {
+    filterInputDOM.addEventListener('input', (e) => {
         updateBackdropState({
             [`${filter}`]: `${filter}(${e.target.value}${unit})`,
         });
