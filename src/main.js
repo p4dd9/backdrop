@@ -6,45 +6,53 @@ const filters = [
     {
         filter: 'blur',
         unit: 'px',
+        defaultValue: 0,
     },
     {
         filter: 'brightness',
         unit: '%',
+        defaultValue: 100,
     },
     {
         filter: 'contrast',
         unit: '%',
+        defaultValue: 100,
     },
     {
         filter: 'grayscale',
         unit: '%',
+        defaultValue: 0,
     },
     {
         filter: 'hue-rotate',
         unit: 'deg',
+        defaultValue: 0,
     },
     {
         filter: 'invert',
         unit: '%',
+        defaultValue: 0,
     },
     {
         filter: 'sepia',
         unit: '%',
+        defaultValue: 0,
     },
     {
         filter: 'saturate',
         unit: '%',
+        defaultValue: 100,
     },
 ];
 
 let backdropState = {};
 
-const createBackdropFilterDOM = (type, unit) => {
+const createBackdropFilterDOM = (type, unit, defaultValue) => {
     return `
         <div id="${type}-filter" class="filter">
             <label class="filter-label">
                 <p>${type} (${unit})</p>
-                <input id="${type}" class="filter-input" min="0" type="number"></input>
+                <input id="${type}" class="filter-input" value="${defaultValue}" min="0" type="number"></input>
             </label>
         <div>`;
 };
@@ -62,8 +70,12 @@ const updateBackdropFilterCSS = () => {
     overlayFilterDOM.style.backdropFilter = backdropFilterCSS;
 };
 
-const injectFilter = (filter, unit) => {
-    const filterDOMContent = createBackdropFilterDOM(filter, unit);
+const injectFilter = (filter, unit, defaultValue) => {
+    const filterDOMContent = createBackdropFilterDOM(
+        filter,
+        unit,
+        defaultValue
+    );
     const filterDOM = document.createElement('div');
     filterDOM.innerHTML = filterDOMContent;
 
@@ -78,7 +90,7 @@ const injectFilter = (filter, unit) => {
 
 // inject all the filters
 filters.map((el) => {
-    injectFilter(el.filter, el.unit);
+    injectFilter(el.filter, el.unit, el.defaultValue);
 });
 
 menuControl.addEventListener('click', () => {
