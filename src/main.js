@@ -1,5 +1,7 @@
 const menuDOM = document.getElementById('menu');
+const menuContentDOM = document.getElementById('menuContent');
 const overlayFilterDOM = document.getElementById('overlayFilter');
+
 const filters = [
     {
         filter: 'blur',
@@ -65,7 +67,7 @@ const injectFilter = (filter, unit) => {
     const filterDOM = document.createElement('div');
     filterDOM.innerHTML = filterDOMContent;
 
-    menuDOM.appendChild(filterDOM);
+    menuContentDOM.appendChild(filterDOM);
     const filterInputDOM = document.getElementById(filter);
     filterInputDOM.addEventListener('input', (e) => {
         updateBackdropState({
@@ -77,6 +79,10 @@ const injectFilter = (filter, unit) => {
 // inject all the filters
 filters.map((el) => {
     injectFilter(el.filter, el.unit);
+});
+
+menuControl.addEventListener('click', () => {
+    menuDOM.classList.toggle('menu-close');
 });
 
 /**
