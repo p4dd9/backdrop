@@ -44,7 +44,7 @@ const createBackdropFilterDOM = (type, unit) => {
         <div id="${type}-filter" class="filter">
             <label class="filter-label">
                 <p>${type} (${unit})</p>
-                <input id="${type}" class="filter-input" type="number"></input>
+                <input id="${type}" class="filter-input" min="0" type="number"></input>
             </label>
         <div>`;
 };
