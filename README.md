@@ -21,3 +21,10 @@ Click on the BACKDROP badge on the left to open the settings menu. Play around w
 -   Set a max cap for form values (css prop specific)
 -   Observe feedback to decide to hide button badge on the left if mouse is not hovering the screen
 -   Observe feedback and rename extension back to "Backdrop" (https://discuss.dev.twitch.tv/t/extension-naming-issues/24264)
+
+# References
+
+https://css-tricks.com/almanac/properties/f/filter/  
+https://css-tricks.com/using-svg-to-create-a-duotone-image-effect/  
+https://alistapart.com/article/finessing-fecolormatrix/  
+http://una.github.io/CSSgram/
