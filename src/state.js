@@ -20,6 +20,14 @@ const updateBackdropFilterCSS = () => {
 };
 
 const updateCssFilterInputValues = () => {
+    // state is reseted to its original values
+    if (Object.keys(backdropState).length < 1) {
+        for (const cssFilter of cssFilters) {
+            const domInputElement = document.getElementById(cssFilter.filter);
+            domInputElement.value = cssFilter.defaultValue;
+        }
+        return;
+    }
     for (const key of Object.keys(backdropState)) {
         const domInputElement = document.getElementById(key);
         if (domInputElement) {
