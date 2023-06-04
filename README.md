@@ -1,7 +1,6 @@
 # Backdrop
 
 A clientside twitch extension
-Repo: https://github.com/p4dd9/backdrop
 
 # How to use
 
@@ -33,6 +32,7 @@ v0.0.1
 
 # References
 
+https://github.com/p4dd9/backdrop
 https://css-tricks.com/almanac/properties/f/filter/  
 https://css-tricks.com/using-svg-to-create-a-duotone-image-effect/  
 https://codepen.io/lentilz/pen/KybBdg  
