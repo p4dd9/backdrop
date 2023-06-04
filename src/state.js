@@ -27,12 +27,14 @@ const updateCssFilterInputValues = () => {
                 .split('(')
                 .pop()
                 .split(')')[0]
-                .replace(/[^0-9.,]/g, '');
-            /**
-             * TODO: fix this for number decimals
-             */
-            console.log(pureValue);
-            domInputElement.value = parseFloat(pureValue);
+                .replace('%', '')
+                .replace('px', '')
+                .replace('deg', '');
+            const noramlizedValue = pureValue.includes('.')
+                ? parseFloat(pureValue) * 100
+                : parseInt(pureValue);
+            if (isNaN(noramlizedValue)) return;
+            domInputElement.value = noramlizedValue;
         }
     }
     console.log(backdropState);
