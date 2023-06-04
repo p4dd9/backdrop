@@ -17,4 +17,12 @@ const svgFilters = [
             invert: 'invert(0.8)',
         },
     },
+    {
+        id: 'fDuoTonePeachy',
+        name: 'duotone peachy',
+        description: 'Peach party',
+        values: {
+            url: "url('#duotone_peachypink')",
+        },
+    },
 ];

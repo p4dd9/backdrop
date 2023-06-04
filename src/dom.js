@@ -58,6 +58,8 @@ const injectSvgFilter = (svgFilter) => {
         if (Object.keys(svgFilterValues).length < 1) {
             resetBackdropState();
         }
+        // reset current state to cleanup any existing state so that the full preset is used
+        resetBackdropState();
         updateBackdropState({
             ...svgFilterValues,
         });
