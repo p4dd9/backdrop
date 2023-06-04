@@ -1,16 +1,17 @@
-# FilterFiesta
+# Backdrop
 
 A clientside twitch extension
 Repo: https://github.com/p4dd9/backdrop
 
 # How to use
 
-Click on the BACKDROP badge on the left to open the settings menu. Play around with the filters.
+Click on the BACKDROP badge on the left to open the settings menu. Play around with the filters. The presets automatically updated the BackgroundCSS related input elements. The "none" preset resets the entire effects.
 
 # Changelog
 
 v0.0.2
 
+-   Renamed extension to Backdrop
 -   Added SVG filter presets
 -   Added reset preset button
 
@@ -23,7 +24,8 @@ v0.0.1
 
 # Development plans
 
--   Add presets (possibly submitted by the twitch community, e.g. LoFi, Horror, ...)
+-   Animated SVG filters
+-   Interactive SVG filters (like a sponge cleaning up a window to see through)
 -   Store presets in localStorage
 -   Set a max cap for form values (css prop specific)
 -   Observe feedback to decide to hide button badge on the left if mouse is not hovering the screen
