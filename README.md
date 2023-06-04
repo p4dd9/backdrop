@@ -26,5 +26,6 @@ Click on the BACKDROP badge on the left to open the settings menu. Play around w
 
 https://css-tricks.com/almanac/properties/f/filter/  
 https://css-tricks.com/using-svg-to-create-a-duotone-image-effect/  
+https://codepen.io/lentilz/pen/KybBdg  
 https://alistapart.com/article/finessing-fecolormatrix/  
 http://una.github.io/CSSgram/
