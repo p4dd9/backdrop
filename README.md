@@ -9,6 +9,13 @@ Click on the BACKDROP badge on the left to open the settings menu. Play around w
 
 # Changelog
 
+v0.0.2
+
+-   Added SVG filter presets
+-   Added reset preset button
+
+v0.0.1
+
 -   Implement toggleable extension UI via mouse click on "BACKDROP" button
 -   Integrate browser compatible supported CSS BackdropFilters: blur, brightness, contract, grayscale, hue-rotate, invert, sepia and saturate
 -   Min form values are set to 0
@@ -28,4 +35,8 @@ https://css-tricks.com/almanac/properties/f/filter/
 https://css-tricks.com/using-svg-to-create-a-duotone-image-effect/  
 https://codepen.io/lentilz/pen/KybBdg  
 https://alistapart.com/article/finessing-fecolormatrix/  
-http://una.github.io/CSSgram/
+http://una.github.io/CSSgram/  
+https://blog.logrocket.com/complete-guide-using-css-filters-svgs/  
+https://codepen.io/cassie-codes/pen/zWJxXj  
+https://codepen.io/damianmuti/pen/MvYPPa
+https://codepen.io/eliortabeka/pen/WOWOdW

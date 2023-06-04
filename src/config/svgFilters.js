@@ -19,10 +19,18 @@ const svgFilters = [
     },
     {
         id: 'fDuoTonePeachy',
-        name: 'duotone peachy',
+        name: 'peachy',
         description: 'Peach party',
         values: {
             url: "url('#duotone_peachypink')",
+        },
+    },
+    {
+        id: 'fDuoToneNavyOrange',
+        name: 'navy orange',
+        description: 'Navy orange',
+        values: {
+            url: "url('#duotone_navyorange')",
         },
     },
 ];

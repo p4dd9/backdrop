@@ -89,6 +89,12 @@
             .filter-input {
                 width: 65px;
             }
+
+            #svgFiltersWrapper {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin-bottom: 8px;
+            }
         </style>
     </head>
 
@@ -146,6 +152,36 @@
                         <feFuncA type="table" tableValues="0 1"></feFuncA>
                     </feComponentTransfer>
                 </filter>
+
+                <filter id="duotone_navyorange">
+                    <feColorMatrix
+                        type="matrix"
+                        result="grayscale"
+                        values="1 0 0 0 0
+                              1 0 0 0 0
+                              1 0 0 0 0
+                              0 0 0 1 0"
+                    />
+
+                    <feComponentTransfer
+                        color-interpolation-filters="sRGB"
+                        result="duotone_navy_orange"
+                    >
+                        <feFuncR
+                            type="table"
+                            tableValues="0.05490196078 1"
+                        ></feFuncR>
+                        <feFuncG
+                            type="table"
+                            tableValues="0.1568627451 0.5921568627"
+                        ></feFuncG>
+                        <feFuncB
+                            type="table"
+                            tableValues="0.1647058824 0.003921568627"
+                        ></feFuncB>
+                        <feFuncA type="table" tableValues="0 1"></feFuncA>
+                    </feComponentTransfer>
+                </filter>
             </defs>
         </svg>
 
@@ -153,6 +189,7 @@
         <div id="menu" class="menu-close">
             <div id="menuContent">
                 <button id="menuControl">BACKDROP</button>
+                <div id="svgFiltersWrapper"></div>
             </div>
         </div>
 

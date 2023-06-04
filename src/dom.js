@@ -1,7 +1,7 @@
 const menuDOM = document.getElementById('menu');
 const menuContentDOM = document.getElementById('menuContent');
 const overlayFilterDOM = document.getElementById('overlayFilter');
-
+const svgFiltersWrapperDOM = document.getElementById('svgFiltersWrapper');
 /**
  * SVG Filter Template for DOM injection
  */
@@ -48,9 +48,9 @@ const injectSvgFilter = (svgFilter) => {
     const svgFilterValues = svgFilter.values;
 
     const filterDOM = document.createElement('div');
-    filterDOM.style.display = 'inline-block';
+    filterDOM.style.display = 'contents';
     filterDOM.innerHTML = filterDOMContent;
-    menuContentDOM.appendChild(filterDOM);
+    svgFiltersWrapperDOM.appendChild(filterDOM);
 
     const filterInputDOM = document.getElementById(svgFilter.id);
     filterInputDOM.addEventListener('click', () => {
