@@ -1,6 +1,7 @@
 # Backdrop
 
-A clientside twitch extension
+A clientside twitch extension  
+https://dashboard.twitch.tv/extensions/36v8y6ngrvjl6f1nfmgdg9fw25wyfe
 
 # How to use
 
