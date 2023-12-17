@@ -9,6 +9,11 @@ Click on the BACKDROP badge on the left to open the settings menu. Play around w
 
 # Changelog
 
+v0.0.3
+
+-   updated contact and support email
+-   updated author name
+
 v0.0.2
 
 -   Renamed extension to Backdrop
